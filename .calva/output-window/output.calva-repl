@@ -1,0 +1,402 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj::user=> 
+
+; Jack-in done.
+clj::user=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers_test.clj
+#'armstrong-numbers-test/armstrong-number-21897142587612075
+clj::armstrong-numbers-test=> 
+; Running all project tests…
+; ERROR in armstrong-numbers-test/armstrong-number-0 (line 7):
+; Zero is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 0)
+; ERROR in armstrong-numbers-test/armstrong-number-153 (line 19):
+; Three digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 153)
+; ERROR in armstrong-numbers-test/armstrong-number-21897142587612075 (line 43):
+; Seventeen digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 21897142587612075)
+; ERROR in armstrong-numbers-test/armstrong-number-5 (line 11):
+; Single digit numbers are Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 5)
+; ERROR in armstrong-numbers-test/armstrong-number-9474 (line 27):
+; Four digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 9474)
+; ERROR in armstrong-numbers-test/armstrong-number-9926315 (line 35):
+; Seven digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 9926315)
+; ERROR in armstrong-numbers-test/not-armstrong-number-10 (line 15):
+; There are no 2 digit Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 10))
+; ERROR in armstrong-numbers-test/not-armstrong-number-100 (line 23):
+; Three digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 100))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9475 (line 31):
+; Four digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9475))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9926314 (line 39):
+; Seven digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9926314))
+; 10 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 10
+clj::armstrong-numbers-test=> 
+; Running all project tests…
+; ERROR in armstrong-numbers-test/armstrong-number-0 (line 7):
+; Zero is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 0)
+; ERROR in armstrong-numbers-test/armstrong-number-153 (line 19):
+; Three digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 153)
+; ERROR in armstrong-numbers-test/armstrong-number-21897142587612075 (line 43):
+; Seventeen digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 21897142587612075)
+; ERROR in armstrong-numbers-test/armstrong-number-5 (line 11):
+; Single digit numbers are Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 5)
+; ERROR in armstrong-numbers-test/armstrong-number-9474 (line 27):
+; Four digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 9474)
+; ERROR in armstrong-numbers-test/armstrong-number-9926315 (line 35):
+; Seven digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(armstrong? 9926315)
+; ERROR in armstrong-numbers-test/not-armstrong-number-10 (line 15):
+; There are no 2 digit Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 10))
+; ERROR in armstrong-numbers-test/not-armstrong-number-100 (line 23):
+; Three digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 100))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9475 (line 31):
+; Four digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9475))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9926314 (line 39):
+; Seven digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.Number (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9926314))
+; 10 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 10
+clj::armstrong-numbers-test=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; ERROR in armstrong-numbers-test/armstrong-number-0 (line 7):
+; Zero is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 0)
+; ERROR in armstrong-numbers-test/armstrong-number-153 (line 19):
+; Three digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 153)
+; ERROR in armstrong-numbers-test/armstrong-number-21897142587612075 (line 43):
+; Seventeen digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 21897142587612075)
+; ERROR in armstrong-numbers-test/armstrong-number-5 (line 11):
+; Single digit numbers are Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 5)
+; ERROR in armstrong-numbers-test/armstrong-number-9474 (line 27):
+; Four digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 9474)
+; ERROR in armstrong-numbers-test/armstrong-number-9926315 (line 35):
+; Seven digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 9926315)
+; ERROR in armstrong-numbers-test/not-armstrong-number-10 (line 15):
+; There are no 2 digit Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 10))
+; ERROR in armstrong-numbers-test/not-armstrong-number-100 (line 23):
+; Three digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 100))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9475 (line 31):
+; Four digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9475))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9926314 (line 39):
+; Seven digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9926314))
+; 10 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; ERROR in armstrong-numbers-test/armstrong-number-0 (line 7):
+; Zero is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(armstrong? 0)
+; ERROR in armstrong-numbers-test/armstrong-number-153 (line 19):
+; Three digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(armstrong? 153)
+; ERROR in armstrong-numbers-test/armstrong-number-21897142587612075 (line 43):
+; Seventeen digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(armstrong? 21897142587612075)
+; ERROR in armstrong-numbers-test/armstrong-number-5 (line 11):
+; Single digit numbers are Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(armstrong? 5)
+; ERROR in armstrong-numbers-test/armstrong-number-9474 (line 27):
+; Four digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(armstrong? 9474)
+; ERROR in armstrong-numbers-test/armstrong-number-9926315 (line 35):
+; Seven digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(armstrong? 9926315)
+; ERROR in armstrong-numbers-test/not-armstrong-number-10 (line 15):
+; There are no 2 digit Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(not (armstrong? 10))
+; ERROR in armstrong-numbers-test/not-armstrong-number-100 (line 23):
+; Three digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(not (armstrong? 100))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9475 (line 31):
+; Four digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(not (armstrong? 9475))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9926314 (line 39):
+; Seven digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (form-init2321437106653537263.clj)
+; expected:
+(not (armstrong? 9926314))
+; 10 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; ERROR in armstrong-numbers-test/armstrong-number-0 (line 7):
+; Zero is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 0)
+; ERROR in armstrong-numbers-test/armstrong-number-153 (line 19):
+; Three digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 153)
+; ERROR in armstrong-numbers-test/armstrong-number-21897142587612075 (line 43):
+; Seventeen digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 21897142587612075)
+; ERROR in armstrong-numbers-test/armstrong-number-5 (line 11):
+; Single digit numbers are Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 5)
+; ERROR in armstrong-numbers-test/armstrong-number-9474 (line 27):
+; Four digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 9474)
+; ERROR in armstrong-numbers-test/armstrong-number-9926315 (line 35):
+; Seven digit number that is an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(armstrong? 9926315)
+; ERROR in armstrong-numbers-test/not-armstrong-number-10 (line 15):
+; There are no 2 digit Armstrong numbers
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 10))
+; ERROR in armstrong-numbers-test/not-armstrong-number-100 (line 23):
+; Three digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 100))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9475 (line 31):
+; Four digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9475))
+; ERROR in armstrong-numbers-test/not-armstrong-number-9926314 (line 39):
+; Seven digit number that is not an Armstrong number
+; error: java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.String (armstrong_numbers.clj)
+; expected:
+(not (armstrong? 9926314))
+; 10 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers.clj
+; Syntax error (IllegalArgumentException) compiling . at (armstrong_numbers.clj:7:14).
+; No matching method pow found taking 1 args for class java.lang.Math
+; Evaluation of file armstrong_numbers.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; FAIL in armstrong-numbers-test/armstrong-number-0 (armstrong_numbers_test.clj:7):
+; Zero is an Armstrong number
+; expected:
+(armstrong? 0)
+; actual:
+(not (armstrong? 0))
+; FAIL in armstrong-numbers-test/armstrong-number-153 (armstrong_numbers_test.clj:19):
+; Three digit number that is an Armstrong number
+; expected:
+(armstrong? 153)
+; actual:
+(not (armstrong? 153))
+; FAIL in armstrong-numbers-test/armstrong-number-21897142587612075 (armstrong_numbers_test.clj:43):
+; Seventeen digit number that is an Armstrong number
+; expected:
+(armstrong? 21897142587612075)
+; actual:
+(not (armstrong? 21897142587612075))
+; FAIL in armstrong-numbers-test/armstrong-number-5 (armstrong_numbers_test.clj:11):
+; Single digit numbers are Armstrong numbers
+; expected:
+(armstrong? 5)
+; actual:
+(not (armstrong? 5))
+; FAIL in armstrong-numbers-test/armstrong-number-9474 (armstrong_numbers_test.clj:27):
+; Four digit number that is an Armstrong number
+; expected:
+(armstrong? 9474)
+; actual:
+(not (armstrong? 9474))
+; FAIL in armstrong-numbers-test/armstrong-number-9926315 (armstrong_numbers_test.clj:35):
+; Seven digit number that is an Armstrong number
+; expected:
+(armstrong? 9926315)
+; actual:
+(not (armstrong? 9926315))
+; 10 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; 10 tests finished, all passing 👍, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+(Character/valueOf \4)
+; Syntax error (IllegalArgumentException) compiling . at (output.calva-repl:361:1).
+; No matching method digit found taking 1 args for class java.lang.Character
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; 10 tests finished, all passing 👍, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+; Evaluating file: armstrong_numbers.clj
+#'armstrong-numbers/armstrong?
+clj::armstrong-numbers=> 
+; Running all project tests…
+; 10 tests finished, all passing 👍, ns: 1, vars: 10
+clj::armstrong-numbers=> 
+; Running all project tests…
+; 10 tests finished, all passing 👍, ns: 1, vars: 10
+clj::armstrong-numbers=> 
